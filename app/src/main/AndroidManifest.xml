@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.irish.salvador.a115project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Forest"></activity>
+        <activity android:name=".Mangrove"></activity>
+        <activity android:name=".FreshWater"></activity>
+        <activity android:name=".Urban"></activity>
+        <activity android:name=".CoralReef"></activity>
+        <activity android:name=".Agricultural"></activity>
+        <activity android:name=".Seagrass"></activity>
+        <activity android:name=".Marginal"></activity>
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
