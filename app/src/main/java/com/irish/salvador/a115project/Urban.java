@@ -16,7 +16,7 @@ public class Urban extends AppCompatActivity {
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture4);
         TextView tv1 = (TextView)findViewById(R.id.tv_login);
-        tv1.setText("Urban");
+        tv1.setText("URBAN");
     }
 
 

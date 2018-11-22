@@ -9,20 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Forest"></activity>
-        <activity android:name=".Mangrove"></activity>
-        <activity android:name=".FreshWater"></activity>
-        <activity android:name=".Urban"></activity>
-        <activity android:name=".CoralReef"></activity>
-        <activity android:name=".Agricultural"></activity>
-        <activity android:name=".Seagrass"></activity>
-        <activity android:name=".Marginal"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Forest" />
+        <activity android:name=".Mangrove" />
+        <activity android:name=".FreshWater" />
+        <activity android:name=".Urban" />
+        <activity android:name=".CoralReef" />
+        <activity android:name=".Agricultural" />
+        <activity android:name=".Seagrass" />
+        <activity android:name=".Marginal" />
+        <activity android:name=".Facts" />
+        <activity android:name=".Explore" />
+        <activity android:name=".Statistics" />
+        <activity android:name=".DosandDonts" />
         <activity android:name=".FirstActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

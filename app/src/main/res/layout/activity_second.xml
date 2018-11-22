@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@drawable/grad_bg"
-    tools:context=".SecondActivity">
+    android:background="@drawable/grad_bg">
+
+    <ImageButton
+        android:id="@+id/ex"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:onClick="Activity1Press"
+        android:scaleType="fitCenter"
+        android:src="@drawable/s3"
+        android:visibility="visible" />
 
     <RelativeLayout
         android:id="@+id/asd"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/imgView_logo"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:background="@null"
             android:onClick="Activity1Press"
@@ -31,26 +39,12 @@
             android:src="@drawable/w"
             android:visibility="visible" />
 
-        <ImageButton
-            android:id="@+id/ex"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@null"
-            android:onClick="Activity1Press"
-            android:scaleType="fitCenter"
-            android:src="@drawable/s3"
-            android:visibility="visible" />
-
         <RelativeLayout
             android:id="@+id/rellay1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgView_logo"
-            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:visibility="visible">
@@ -58,6 +52,7 @@
             <TableLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal">
 
                 <TableRow
@@ -70,9 +65,10 @@
                         style="@android:style/Widget.ImageButton"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginRight="10dp"
                         android:background="@null"
+                        android:onClick="CF"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a14" />
 
@@ -80,9 +76,10 @@
                         android:id="@+id/imageButton3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:background="@null"
+                        android:onClick="CS"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a15" />
 
@@ -97,24 +94,21 @@
                         android:id="@+id/textView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:gravity="center_horizontal"
                         android:text="FACTS"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/ax"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:gravity="center_horizontal"
                         android:text="STATISTICS"
                         android:textColor="@color/white"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
                 </TableRow>
 
                 <TableRow
@@ -126,9 +120,10 @@
                         android:id="@+id/imageButton4"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginRight="10dp"
                         android:background="@null"
+                        android:onClick="CDaD"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a16" />
 
@@ -136,9 +131,10 @@
                         android:id="@+id/imageButton5"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:background="@null"
+                        android:onClick="CS"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a17" />
 
@@ -153,23 +149,21 @@
                         android:id="@+id/as"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:gravity="center_horizontal"
                         android:text="DOs \u0026 DON'Ts"
                         android:textColor="@color/white"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/az"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:gravity="center_horizontal"
                         android:text="EXPLORE"
                         android:textColor="@color/white"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
                 </TableRow>
             </TableLayout>
 
@@ -181,20 +175,20 @@
     <RelativeLayout
         android:id="@+id/rellay2"
         android:layout_width="match_parent"
-        android:gravity="center_horizontal"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
         android:visibility="visible">
 
         <TextView
             android:id="@+id/tv_login"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
             android:text="Ecosystems"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -232,12 +226,12 @@
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:layout_alignTop="@+id/imageButton"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
             android:background="@null"
             android:onClick="Next"
             android:scaleType="fitCenter"
             android:src="@drawable/s2" />
     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

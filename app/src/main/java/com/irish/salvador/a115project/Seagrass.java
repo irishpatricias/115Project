@@ -16,7 +16,7 @@ public class Seagrass extends AppCompatActivity {
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture7);
         TextView tv1 = (TextView)findViewById(R.id.tv_login);
-        tv1.setText("Seagrass");
+        tv1.setText("SEAGRASS");
     }
 
 

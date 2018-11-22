@@ -21,21 +21,47 @@ public class Forest extends AppCompatActivity {
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture1);
         TextView tv1 = (TextView)findViewById(R.id.tv_login);
-        tv1.setText("Forest");
+        tv1.setText("FOREST");
     }
 
 
     public void Activity1Press(View v){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
     }
     public void Prev(View v){
         Intent i = new Intent(getApplicationContext(), Marginal.class);
         startActivity(i);
+        overridePendingTransition(R.transition.slide_from_left, R.transition.slide_to_right);
     }
     public void Next(View v){
         Intent i = new Intent(getApplicationContext(), Mangrove.class);
         startActivity(i);
+        overridePendingTransition(R.transition.slide_from_right, R.transition.slide_to_left);
     }
-
+    public void CF(View v){
+        Intent i = new Intent(getApplicationContext(), Facts.class);
+        i.putExtra("FROM_ACTIVITY", "FO");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
+    public void CDaD(View v){
+        Intent i = new Intent(getApplicationContext(), DosandDonts.class);
+        i.putExtra("FROM_ACTIVITY", "FO");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
+    public void CE(View v){
+        Intent i = new Intent(getApplicationContext(), Explore.class);
+        i.putExtra("FROM_ACTIVITY", "FO");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
+    public void CS(View v){
+        Intent i = new Intent(getApplicationContext(), Statistics.class);
+        i.putExtra("FROM_ACTIVITY", "FO");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
 }

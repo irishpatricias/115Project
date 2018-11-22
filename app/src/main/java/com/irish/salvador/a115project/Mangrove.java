@@ -18,7 +18,7 @@ public class Mangrove extends AppCompatActivity {
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture2);
         TextView tv1 = (TextView)findViewById(R.id.tv_login);
-        tv1.setText("Mangrove");
+        tv1.setText("MANGROVE");
     }
 
 

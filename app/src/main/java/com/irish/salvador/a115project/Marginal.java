@@ -15,7 +15,7 @@ public class Marginal extends AppCompatActivity {
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture8);
         TextView tv1 = (TextView)findViewById(R.id.tv_login);
-        tv1.setText("Marginal");
+        tv1.setText("MARGINAL");
     }
 
 
