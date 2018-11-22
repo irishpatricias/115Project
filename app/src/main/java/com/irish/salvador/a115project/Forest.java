@@ -12,15 +12,14 @@ import android.widget.TextView;
 
 
 public class Forest extends AppCompatActivity {
-
     ImageView imageView3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        imageView3 = (ImageView) findViewById(R.id.imageView3);
+        imageView3 = findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture1);
-        TextView tv1 = (TextView)findViewById(R.id.tv_login);
+        TextView tv1 = findViewById(R.id.tv_login);
         tv1.setText("FOREST");
     }
 
