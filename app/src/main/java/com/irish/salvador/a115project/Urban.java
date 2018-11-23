@@ -27,9 +27,35 @@ public class Urban extends AppCompatActivity {
     public void Prev(View v){
         Intent i = new Intent(getApplicationContext(), FreshWater.class);
         startActivity(i);
+        overridePendingTransition(R.transition.slide_from_left, R.transition.slide_to_right);
     }
     public void Next(View v){
         Intent i = new Intent(getApplicationContext(), CoralReef.class);
         startActivity(i);
+        overridePendingTransition(R.transition.slide_from_right, R.transition.slide_to_left);
+    }
+    public void CF(View v){
+        Intent i = new Intent(getApplicationContext(), Facts.class);
+        i.putExtra("FROM_ACTIVITY", "CR");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
+    public void CDaD(View v){
+        Intent i = new Intent(getApplicationContext(), DosandDonts.class);
+        i.putExtra("FROM_ACTIVITY", "UR");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
+    public void CE(View v){
+        Intent i = new Intent(getApplicationContext(), Explore.class);
+        i.putExtra("FROM_ACTIVITY", "UR");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
+    public void CS(View v){
+        Intent i = new Intent(getApplicationContext(), Statistics.class);
+        i.putExtra("FROM_ACTIVITY", "UR");
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
     }
 }

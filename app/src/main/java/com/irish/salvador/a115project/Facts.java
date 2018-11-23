@@ -2,6 +2,7 @@ package com.irish.salvador.a115project;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
 
@@ -14,7 +15,8 @@ public class Facts extends AppCompatActivity {
         Intent mIntent = getIntent();
         String previousActivity= mIntent.getStringExtra("FROM_ACTIVITY");
         if (previousActivity.equals("AG"))   {
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("AGRICULTURAL");
         }else if (previousActivity.equals("CR")){
             //DOSOMETHING
         }else if (previousActivity.equals("FO")){
