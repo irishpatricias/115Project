@@ -7,12 +7,11 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageView;
 public class Marginal extends AppCompatActivity {
-    ImageView imageView3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        imageView3 =  findViewById(R.id.imageView3);
+        ImageView imageView3 =  findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture8);
         TextView tv1 = findViewById(R.id.tv_login);
         tv1.setText("MARGINAL");
