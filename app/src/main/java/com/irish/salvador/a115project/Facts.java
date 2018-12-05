@@ -16,21 +16,28 @@ public class Facts extends AppCompatActivity {
         String previousActivity= mIntent.getStringExtra("FROM_ACTIVITY");
         if (previousActivity.equals("AG"))   {
             TextView aaa = findViewById(R.id.aaa);
-            aaa.setText("AGRICULTURAL");
+            aaa.setText("Agricultural ecosystems are artificial ecosystems created in the process of developing land and coastal/aquatic areas for farming, animal husbandry, and fishing.");
         }else if (previousActivity.equals("CR")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("Coral reefs are comprised of massive deposits of calcium carbonate that take centuries to produce and develop. Because of such a long process, coral reefs are very delicate ecosystems and are due extensive protective measures.");
         }else if (previousActivity.equals("FO")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("Forests are inherently diverse ecosystems, as conditions found within them are ideal for supporting symbiotic ecological relationships. ");
         }else if (previousActivity.equals("FW")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("Freshwater ecosystems occur in in-land bodies of water and may either be flowing, standing, or man-made. Rivers and streams, lakes and reservoirs, and artificial fishponds are examples that fall into the three respective categories.");
         }else if (previousActivity.equals("ME")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("Mangroves are medium-size and highly tolerant flora that can survive in brackish water (water which is more saline than freshwater, but not as much as seawater).");
         }else if (previousActivity.equals("ML")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("Marginal ecosystems are those that are located between two ecosystems. These can be either natural or artificial, such as areas adapted or reappropriated for agricultural use. ");
         }else if (previousActivity.equals("SG")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("Seagrass ecosystems comprise of aquatic flowering plants that can live in seawater. These types of ecosystems occur in shallow water environments. ");
         }else if (previousActivity.equals("UR")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            aaa.setText("Urban ecosystems are the product of modernized, industrialized human society. These function as the base of human settlements, as well as economic development.");
         }
     }
     public void Activity1Press(View v) {

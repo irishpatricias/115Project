@@ -28,8 +28,8 @@ public class Mangrove extends AppCompatActivity {
     }
     public void Prev(View v){
         Intent i = new Intent(getApplicationContext(), Forest.class);
-        overridePendingTransition(R.transition.slide_from_left, R.transition.slide_to_right);
         startActivity(i);
+        overridePendingTransition(R.transition.slide_from_left, R.transition.slide_to_right);
     }
     public void Next(View v){
         Intent i = new Intent(getApplicationContext(), FreshWater.class);
