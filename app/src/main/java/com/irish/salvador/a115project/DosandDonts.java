@@ -15,21 +15,49 @@ public class DosandDonts extends AppCompatActivity {
         Intent mIntent = getIntent();
         String previousActivity= mIntent.getStringExtra("FROM_ACTIVITY");
         if (previousActivity.equals("AG"))   {
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("\u2022 gathering or destroying of active nests, nest trees, host plants and the like\n" +
+            "\u2022 dumping of waste products detrimental to the ecosystem\n" +
+            "\u2022 burning");
+            bbb.setText("\u2022 maintain your environment clean\n" +
+            "\u2022 if you see others doing harm to the ecosystem advise and/or report them\n" +
+            "\u2022 appreciate the hardwork of farmers and respect them");
         }else if (previousActivity.equals("CR")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("");
+            bbb.setText("");
         }else if (previousActivity.equals("FO")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("");
+            bbb.setText("");
         }else if (previousActivity.equals("FW")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("");
+            bbb.setText("");
         }else if (previousActivity.equals("ME")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("");
+            bbb.setText("");
         }else if (previousActivity.equals("ML")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("");
+            bbb.setText("");
         }else if (previousActivity.equals("SG")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("");
+            bbb.setText("");
         }else if (previousActivity.equals("UR")){
-            //DOSOMETHING
+            TextView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setText("");
+            bbb.setText("");
         }
     }
     public void Activity1Press(View v) {

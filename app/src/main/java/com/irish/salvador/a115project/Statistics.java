@@ -16,21 +16,45 @@ public class Statistics extends AppCompatActivity {
         Intent mIntent = getIntent();
         String previousActivity= mIntent.getStringExtra("FROM_ACTIVITY");
         if (previousActivity.equals("AG"))   {
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c3);
+            bbb.setText("Covering 7% of land cover, it can be said that agricultural ecosystems are both threatened and serve as a threat to other ecosystems as well, despite their unquestionable socio-economic importance. On one hand, continuous urban development for residential and commercial land use is encroaching on agricultural lands. In turn, farmers are forced to move upland, harming forest ecosystems in the process.");
         }else if (previousActivity.equals("CR")){
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c5);
+            bbb.setText("Coral reef damage is a serious concern. As of 2006, only 5% of Philippine coral reefs are in excellent condition, while 32% are already severely damaged (Haribon, 2006).");
         }else if (previousActivity.equals("FO")){
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c1);
+            bbb.setText("It is estimated that from having 70% forest cover at the start of the 1900s, only about 24% remain, based on 2001-03 satellite imagery, according to the DENR’s Forest Management Bureau. Meanwhile, according to the Philippine Tropical Forest Conservation Foundation, “deforestation continues at an average of 100,000 hectares per year or 273 hectares per day.”");
         }else if (previousActivity.equals("FW")){
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c6);
+            bbb.setText("The Philippines has 34% of endemic freshwater in SouthEast Asia");
         }else if (previousActivity.equals("ME")){
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c2);
+            bbb.setText("Almost 2.11% of the protected areas covering land are Mangroves");
         }else if (previousActivity.equals("ML")){
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c4);
+            bbb.setText("Marginal lands now comprise about 70% (over 11 million hectares) of declared forest area in the Philippines.");
         }else if (previousActivity.equals("SG")){
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c7);
+            bbb.setText("Marginal lands now comprise about 70% (over 11 million hectares) of declared forest area in the Philippines.");
         }else if (previousActivity.equals("UR")){
-            //DOSOMETHING
+            ImageView aaa = findViewById(R.id.aaa);
+            TextView bbb = findViewById(R.id.bbb);
+            aaa.setImageResource(R.drawable.c8);
+            bbb.setText("Urban ecosystem covers 14.6% of land cover according to the Biodiversity Management Bureau");
         }
     }
     public void Activity1Press(View v) {
