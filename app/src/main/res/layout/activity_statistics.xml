@@ -67,11 +67,11 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginTop="7dp"
-                        android:background="@null"
+                        android:background="@color/facts"
                         android:gravity="center"
                         android:onClick="ForestActivity"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/m1" />
+                        android:src="@drawable/c1" />
                 </TableRow>
 
                 <TableRow
