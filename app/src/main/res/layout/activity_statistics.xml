@@ -62,14 +62,13 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal">
 
-                    <ImageButton
+                    <ImageView
                         android:id="@+id/aaa"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginTop="7dp"
                         android:background="@color/facts"
                         android:gravity="center"
-                        android:onClick="ForestActivity"
                         android:scaleType="fitCenter"
                         android:src="@drawable/c1" />
                 </TableRow>
@@ -123,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="DOs &amp; DONTs"
+                android:text="STATISTICS"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </RelativeLayout>

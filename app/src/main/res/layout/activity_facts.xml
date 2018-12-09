@@ -24,6 +24,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:background="@null"
+            android:contentDescription="home"
             android:onClick="Activity1Press"
             android:scaleType="fitCenter"
             android:src="@drawable/w"
@@ -34,10 +35,13 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:background="@null"
+            android:contentDescription="exit"
             android:onClick="ActivityBack"
             android:scaleType="fitCenter"
             android:src="@drawable/s3"
@@ -82,14 +86,6 @@
                     </android.support.v7.widget.CardView>
                 </TableRow>
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center_horizontal">
-
-                </TableRow>
-
             </TableLayout>
 
 
@@ -107,7 +103,7 @@
                 android:id="@+id/tv_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+                app:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="FACTS"
                 android:textColor="@color/white"

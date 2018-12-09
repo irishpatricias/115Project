@@ -74,7 +74,6 @@
                             android:layout_height="match_parent"
                             android:onClick="MapPress"
                             android:scaleType="fitXY"
-                            app:cardBackgroundColor="@color/transparent"
                             app:srcCompat="@drawable/e1" />
 
                     </android.support.v7.widget.CardView>
@@ -123,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="DOs &amp; DONTs"
+                android:text="EXPLORE"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </RelativeLayout>
