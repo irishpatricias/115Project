@@ -14,12 +14,18 @@ public class CoralReef extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        imageView3 = (ImageView) findViewById(R.id.imageView3);
+        imageView3 = findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.icture5);
-        TextView tv1 = (TextView)findViewById(R.id.tv_login);
+        TextView tv1 = findViewById(R.id.tv_login);
         tv1.setText("CORAL REEF");
     }
-
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
 
     public void Activity1Press(View v){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);

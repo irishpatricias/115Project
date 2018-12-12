@@ -22,8 +22,13 @@ public class Forest extends AppCompatActivity {
         TextView tv1 = findViewById(R.id.tv_login);
         tv1.setText("FOREST");
     }
-
-
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+    }
     public void Activity1Press(View v){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
