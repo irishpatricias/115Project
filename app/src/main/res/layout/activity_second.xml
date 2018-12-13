@@ -11,10 +11,13 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:background="@null"
+        android:contentDescription="@string/previous"
         android:onClick="Activity1Press"
         android:scaleType="fitCenter"
         android:src="@drawable/s3"
@@ -22,28 +25,14 @@
 
     <RelativeLayout
         android:id="@+id/asd"
+        android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
-        <ImageButton
-            android:id="@+id/imgView_logo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@null"
-            android:onClick="Activity1Press"
-            android:scaleType="fitCenter"
-            android:src="@drawable/w"
-            android:visibility="visible" />
 
         <RelativeLayout
             android:id="@+id/rellay1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imgView_logo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
@@ -67,7 +56,9 @@
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:background="@null"
+                        android:contentDescription="@string/facts"
                         android:onClick="CF"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a14" />
@@ -78,7 +69,9 @@
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:background="@null"
+                        android:contentDescription="@string/statistics"
                         android:onClick="CS"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a15" />
@@ -95,8 +88,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:gravity="center_horizontal"
-                        android:text="FACTS"
+                        android:text="@string/facts"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
 
@@ -105,8 +99,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:gravity="center_horizontal"
-                        android:text="STATISTICS"
+                        android:text="@string/statistics"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
                 </TableRow>
@@ -122,7 +117,9 @@
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:background="@null"
+                        android:contentDescription="@string/dosanddonts"
                         android:onClick="CDaD"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a16" />
@@ -132,8 +129,10 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
                         android:background="@null"
+                        android:contentDescription="@string/explore"
                         android:onClick="CE"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/a17" />
@@ -150,8 +149,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:gravity="center_horizontal"
-                        android:text="DOs \u0026 DON'Ts"
+                        android:text="@string/dosanddonts"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
 
@@ -160,8 +160,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:gravity="center_horizontal"
-                        android:text="EXPLORE"
+                        android:text="@string/explore"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
                 </TableRow>
@@ -186,7 +187,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:gravity="center_horizontal"
-            android:text="Ecosystems"
+            android:text="@string/ecosystems"
             android:textColor="@color/white"
             android:textSize="15sp" />
     </RelativeLayout>
@@ -205,6 +206,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/display"
             android:cropToPadding="true"
             android:scaleType="fitEnd"
             app:srcCompat="@drawable/icture1" />
@@ -213,10 +215,13 @@
             android:id="@+id/imageButton"
             android:layout_width="40sp"
             android:layout_height="40sp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
             android:layout_marginLeft="0dp"
             android:background="@null"
+            android:contentDescription="@string/previous"
             android:onClick="Prev"
             android:scaleType="fitCenter"
             android:src="@drawable/s1" />
@@ -226,9 +231,11 @@
             android:layout_width="40sp"
             android:layout_height="40sp"
             android:layout_alignTop="@+id/imageButton"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:background="@null"
+            android:contentDescription="@string/next"
             android:onClick="Next"
             android:scaleType="fitCenter"
             android:src="@drawable/s2" />

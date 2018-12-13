@@ -28,6 +28,7 @@ public class Urban extends AppCompatActivity {
     public void Activity1Press(View v){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
     }
     public void Prev(View v){
         Intent i = new Intent(getApplicationContext(), FreshWater.class);

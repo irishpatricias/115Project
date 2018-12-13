@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Greener</string>
+    <string name="ecosystems">Ecosystems</string>
+    <string name="facts">FACTS</string>
+    <string name="explore">EXPLORE</string>
+    <string name="dosanddonts">DOs \u0026 DON'Ts</string>
+    <string name="statistics">STATISTICS</string>
+    <string name="next">Next</string>
+    <string name="previous">Prev</string>
+    <string name="display">Display</string>
 </resources>
