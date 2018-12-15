@@ -49,7 +49,7 @@ public class Statistics extends AppCompatActivity {
             ImageView aaa = findViewById(R.id.aaa);
             TextView bbb = findViewById(R.id.bbb);
             aaa.setImageResource(R.drawable.c7);
-            bbb.setText("Marginal lands now comprise about 70% (over 11 million hectares) of declared forest area in the Philippines.");
+            bbb.setText("50% of Seagrass in the Philippines are now endangered.");
         }else if (previousActivity.equals("UR")){
             ImageView aaa = findViewById(R.id.aaa);
             TextView bbb = findViewById(R.id.bbb);
