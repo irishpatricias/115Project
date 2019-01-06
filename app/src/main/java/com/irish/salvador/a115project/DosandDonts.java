@@ -65,7 +65,7 @@ public class DosandDonts extends AppCompatActivity {
             aaa.setText("\u2022Enjoy the scenery and be friendly with the animals you'll encounter\n" +
                     "\u2022Keep your environment clean\n" +
                     "\u2022Make use of designated trash cans/trash bins");
-            bbb.setText("\u2022Littering in anywhre you go\n" +
+            bbb.setText("\u2022Littering in anywhere you go\n" +
                     "\u2022Make unnecessary disturbance to animals\n" +
                     "\u2022Smoking and/or burning of trash");
         }else if (previousActivity.equals("SG")){
@@ -80,7 +80,7 @@ public class DosandDonts extends AppCompatActivity {
         }else if (previousActivity.equals("UR")){
             TextView aaa = findViewById(R.id.aaa);
             TextView bbb = findViewById(R.id.bbb);
-            aaa.setText("\u2022Practice segragating your trash\n" +
+            aaa.setText("\u2022Practice segregating your trash\n" +
                     "\u2022Learn ways to be more eco friendly\n" +
                     "\u2022Clean as you go");
             bbb.setText("\u2022Use of plastics\n" +

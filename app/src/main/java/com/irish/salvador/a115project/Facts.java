@@ -7,11 +7,10 @@ import java.util.*;
 import android.view.View;
 import java.io.*;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import android.content.Intent;
 
 public class Facts extends AppCompatActivity {
-    Charset charset = Charset.forName("UTF-8");
+    private final Charset charset = Charset.forName("UTF-8");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,7 +91,7 @@ public class Facts extends AppCompatActivity {
             }
         }
     }
-    public String convert(InputStream inputStream, Charset charset) {
+    private String convert(InputStream inputStream, Charset charset) {
 
         try {
             Scanner scanner = new Scanner(inputStream, charset.name());

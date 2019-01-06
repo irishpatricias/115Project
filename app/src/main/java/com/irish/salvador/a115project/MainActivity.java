@@ -6,14 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.content.Intent;
-import android.view.View.OnClickListener;
-import android.net.Uri;
 import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-
-    RelativeLayout rellay1, rellay2;
     private Boolean exit = false;
     @Override
     public void onBackPressed() {
@@ -77,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        RelativeLayout rellay1, rellay2;
         rellay1 = findViewById(R.id.rellay1);
         rellay2 = findViewById(R.id.rellay2);
         rellay1.setVisibility(View.VISIBLE);

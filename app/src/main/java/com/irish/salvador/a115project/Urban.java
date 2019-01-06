@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Urban extends AppCompatActivity {
-    ImageView imageView3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

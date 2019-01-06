@@ -6,16 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.content.Intent;
-import android.view.View.OnClickListener;
-import android.net.Uri;
 import android.widget.Toast;
 
 
 public class FirstActivity extends AppCompatActivity {
 
-    RelativeLayout rellay1, rellay2;
-    Handler handler = new Handler();
-    Runnable runnable = new Runnable() {
+    private final Handler handler = new Handler();
+    private RelativeLayout rellay1, rellay2;
+    private final Runnable runnable = new Runnable() {
         @Override
         public void run() {
             rellay1.setVisibility(View.VISIBLE);

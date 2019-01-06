@@ -10,7 +10,7 @@ import android.net.Uri;
 
 
 public class Explore extends AppCompatActivity {
-    String asd = "lol";
+    private String asd = "lol";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent mIntent = getIntent();
